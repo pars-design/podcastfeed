@@ -132,7 +132,7 @@ class Manager
         $this->author = $this->getValue($data, 'author');
 
         // Optional values
-        $this->category = $this->getValue($data, 'category');
+        $this->category = $this->getDefault('category');
         $this->explicit = $this->getValue($data, 'explicit');
         $this->subtitle = $this->getValue($data, 'subtitle');
         $this->language = $this->getValue($data, 'language');
