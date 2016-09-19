@@ -270,9 +270,8 @@ class Manager
 
         // Create the <itunes:category>
         if ($this->category !== null) {
-            $node = $channel->appendChild($dom->createElement('itunes:category'));                
-            $node->setAttribute("text", $this->category);
-            $channel->appendChild($node);
+            $category = $dom->createElement("itunes:category", $this->category);
+            $channel->appendChild($category);
         }
 
         // Create the <itunes:explicit>
