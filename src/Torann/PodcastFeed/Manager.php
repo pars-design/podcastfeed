@@ -165,11 +165,11 @@ class Manager
         $this->media[] = new Media($media);
     }
 
-    public function createElementAttr($domObj, $tag_name, $value = NULL, $attributes = NULL)
+    public function createElementAttr($domObj, $tag_name, $value = null, $attributes = null)
     {
-        $element = ($value != NULL ) ? $domObj->createElement($tag_name, $value) : $domObj->createElement($tag_name);
+        $element = ($value != null) ? $domObj->createElement($tag_name, $value) : $domObj->createElement($tag_name);
 
-        if( $attributes != NULL )
+        if( $attributes != null)
         {
             foreach ($attributes as $attr=>$val)
             {
@@ -285,7 +285,7 @@ class Manager
 
         // Create the <itunes:category>
         if ($this->category !== null) {
-            $category = $this->createElementAttr($dom, 'itunes:category', $this->category, ['text' => $this->category]);
+            $category = $this->createElementAttr($dom, 'itunes:category', null, ['text' => $this->category]);
             $channel->appendChild($category);
         }
 
