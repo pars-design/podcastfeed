@@ -165,21 +165,6 @@ class Manager
         $this->media[] = new Media($media);
     }
 
-    public function createElementAttr($domObj, $tag_name, $value = null, $attributes = null)
-    {
-        $element = ($value != null) ? $domObj->createElement($tag_name, $value) : $domObj->createElement($tag_name);
-
-        if( $attributes != null)
-        {
-            foreach ($attributes as $attr=>$val)
-            {
-                $element->setAttribute($attr, $val);
-            }
-        }
-
-        return $element;
-    }
-
     /**
      * Returns the podcast generated as character strings
      *
@@ -285,7 +270,9 @@ class Manager
 
         // Create the <itunes:category>
         if ($this->category !== null) {
-            $category = $this->createElementAttr($dom, 'itunes:category', '', ['text' => $this->category]);
+            $category = $dom->createElement('itunes:category');
+            $category = $dom->appendChild($category);
+            $category->setAttribute('text', $this->category);
             $channel->appendChild($category);
         }
 
