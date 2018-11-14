@@ -1,6 +1,6 @@
 <?php
 
-namespace YOukoulayley\PodcastFeed;
+namespace Youkoulayley\PodcastFeed;
 
 use DateTime;
 

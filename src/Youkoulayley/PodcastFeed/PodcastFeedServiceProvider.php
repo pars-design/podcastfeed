@@ -32,7 +32,7 @@ class PodcastFeedServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('torann.podcastfeed', function ($app) {
+        $this->app->bind('youkoulayley.podcastfeed', function ($app) {
             $config = $app->config->get('podcast-feed', []);
 
             return new Manager($config);
