@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\PodcastFeed;
+namespace Youkoulayley\PodcastFeed;
 
 use Illuminate\Support\ServiceProvider;
 

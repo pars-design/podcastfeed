@@ -1,4 +1,4 @@
-<?php namespace Torann\PodcastFeed;
+<?php namespace Youkoulayley\PodcastFeed;
 
 use DateTime;
 use DOMDocument;

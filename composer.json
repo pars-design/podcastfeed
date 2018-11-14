@@ -1,5 +1,5 @@
 {
-    "name": "torann/podcastfeed",
+    "name": "youkoulayley/podcastfeed",
     "description": "Generate RSS feeds for podcasts in Laravel 5.",
     "keywords": ["laravel", "podcast", "podcast generator", "rss", "xml", "feed"],
     "license": "BSD 2-Clause",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Torann\\PodcastFeed\\": "src/Torann/PodcastFeed/"
+            "Youkoulayley\\PodcastFeed\\": "src/Youkoulayley/PodcastFeed/"
         }
     },
     "extra": {

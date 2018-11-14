@@ -4,8 +4,8 @@ Generate a RSS feed for podcast for Laravel 5.
 
 ## Installation
 
-- [Podcast on Packagist](https://packagist.org/packages/torann/podcastfeed)
-- [Podcast on GitHub](https://github.com/torann/podcastfeed)
+- [Podcast on Packagist](https://packagist.org/packages/youkoulayley/podcastfeed)
+- [Podcast on GitHub](https://github.com/youkoulayley/podcastfeed)
 
 
 From the command line run
@@ -22,7 +22,7 @@ Once installed you need to register the service provider with the application. O
 'providers' => [
     ...
 
-    Torann\PodcastFeed\PodcastFeedServiceProvider::class,
+    Youkoulayley\PodcastFeed\PodcastFeedServiceProvider::class,
 
     ...
 ]
@@ -34,7 +34,7 @@ This package also comes with a facade, which provides an easy way to call the th
 'aliases' => [
     ...
 
-    'PodcastFeed' => Torann\PodcastFeed\Facades\PodcastFeed::class,
+    'PodcastFeed' => Youkoulayley\PodcastFeed\Facades\PodcastFeed::class,
 
     ...
 ];
@@ -45,7 +45,7 @@ This package also comes with a facade, which provides an easy way to call the th
 Run this on the command line from the root of your project:
 
 ```
-$ php artisan vendor:publish --provider="Torann\PodcastFeed\PodcastFeedServiceProvider"
+$ php artisan vendor:publish --provider="Youkoulayley\PodcastFeed\PodcastFeedServiceProvider"
 ```
 
 A configuration file will be publish to `config/podcast-feed.php`.
@@ -64,6 +64,7 @@ PodcastFeed::setHeader([
     'image'       => 'http://example.com/podcasts/everything/AllAboutEverything.jpg',
     'author'      => 'John Doe',
     'email'       => 'john.doe@example.com',
+    'explicit'    => 'clean',
     'category'    => 'Technology',
     'language'    => 'en-us',
     'copyright'   => '2016 John Doe & Family',
