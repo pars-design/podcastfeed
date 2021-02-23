@@ -2,6 +2,7 @@
 
 use DateTime;
 use DOMDocument;
+use Illuminate\Support\Arr;
 
 class Media
 {
@@ -117,7 +118,7 @@ class Media
      */
     public function getValue($data, $key, $default = null)
     {
-        $value = array_get($data, $key, $default);
+        $value = Arr::get($data, $key, $default);
 
         return htmlspecialchars($value);
     }

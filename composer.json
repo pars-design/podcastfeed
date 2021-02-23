@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": ">=7.2",
-        "illuminate/support": "*"
+        "illuminate/support": "*",
+        "ext-dom": "*"
     },
     "autoload": {
         "psr-4": {
