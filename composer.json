@@ -1,5 +1,5 @@
 {
-    "name": "youkoulayley/podcastfeed",
+    "name": "pars-design/podcastfeed",
     "description": "Generate RSS feeds for podcasts in Laravel 5.",
     "keywords": ["laravel", "podcast", "podcast generator", "rss", "xml", "feed"],
     "license": "BSD 2-Clause",
